@@ -1,7 +1,10 @@
 package repo;
 
+import domain.UserRoles;
 
 public interface IRepositoryCatalog {
 
-	public IEnumerationValueRepository<?> enumerations();
+	public IUserRepository getUsers();
+	public IRepository<UserRoles> getRoles();
+	public void commit();
 }

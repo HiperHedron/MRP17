@@ -2,13 +2,16 @@ package repos;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.List;
 
 import domain.Entity;
 import domain.User;
 import mappers.IMapResultSetToEntity;
+import repo.IUserRepository;
+import repo.PagingInfo;
 import unitofwork.IUnitOfWork;
 
-public class UserRepository extends RepositoryBase<User> {
+public class UserRepository extends RepositoryBase<User> implements IUserRepository{
 
 	public UserRepository(Connection conection, IMapResultSetToEntity<User> mapper, IUnitOfWork uow) {
 		super(conection, mapper, uow);
@@ -63,6 +66,40 @@ public class UserRepository extends RepositoryBase<User> {
 		//update.setInt(0, user.getId());
 		update.setString(1, user.getLogin());
 		update.setString(2, user.getPassword());
+		
+	}
+
+	public void count() {
+		//return "UPDATE t_sys_users SET (id, login, password)=(?,?,?) WHERE id=?";
+	}
+
+	public void modify(User entity) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void allOnPage(PagingInfo page) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public User withId(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<User> withLogin(String login) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<User> withLoginAndPassword(String login, String password) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setupPermissions(User user) {
+		// TODO Auto-generated method stub
 		
 	}
 

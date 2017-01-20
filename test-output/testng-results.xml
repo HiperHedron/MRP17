@@ -1,17 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1120" started-at="2017-01-20T15:58:36Z" finished-at="2017-01-20T15:58:38Z">
+  <suite name="Default suite" duration-ms="200" started-at="2017-01-20T19:15:59Z" finished-at="2017-01-20T19:16:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1120" started-at="2017-01-20T15:58:36Z" finished-at="2017-01-20T15:58:38Z">
-      <class name="crudTests.UserRepositoryCRUDTest">
-        <test-method status="PASS" signature="testAdd()[pri:0, instance:crudTests.UserRepositoryCRUDTest@56f4468b]" name="testAdd" duration-ms="1100" started-at="2017-01-20T16:58:36Z" finished-at="2017-01-20T16:58:38Z">
+    <test name="Default test" duration-ms="200" started-at="2017-01-20T19:15:59Z" finished-at="2017-01-20T19:16:00Z">
+      <class name="createTable.Test_createTables">
+        <test-method status="PASS" signature="connectDBBeforeTests()[pri:0, instance:createTable.Test_createTables@1a968a59]" name="connectDBBeforeTests" is-config="true" duration-ms="164" started-at="2017-01-20T20:15:59Z" finished-at="2017-01-20T20:16:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAdd -->
-      </class> <!-- crudTests.UserRepositoryCRUDTest -->
+        </test-method> <!-- connectDBBeforeTests -->
+        <test-method status="PASS" signature="createTable_t_sys_enums()[pri:0, instance:createTable.Test_createTables@1a968a59]" name="createTable_t_sys_enums" duration-ms="9" started-at="2017-01-20T20:16:00Z" finished-at="2017-01-20T20:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTable_t_sys_enums -->
+        <test-method status="PASS" signature="createTable_t_sys_permissions()[pri:0, instance:createTable.Test_createTables@1a968a59]" name="createTable_t_sys_permissions" duration-ms="2" started-at="2017-01-20T20:16:00Z" finished-at="2017-01-20T20:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTable_t_sys_permissions -->
+        <test-method status="PASS" signature="createTable_t_sys_roles()[pri:0, instance:createTable.Test_createTables@1a968a59]" name="createTable_t_sys_roles" duration-ms="2" started-at="2017-01-20T20:16:00Z" finished-at="2017-01-20T20:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTable_t_sys_roles -->
+        <test-method status="PASS" signature="createTable_t_sys_users()[pri:0, instance:createTable.Test_createTables@1a968a59]" name="createTable_t_sys_users" duration-ms="6" started-at="2017-01-20T20:16:00Z" finished-at="2017-01-20T20:16:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTable_t_sys_users -->
+      </class> <!-- createTable.Test_createTables -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
